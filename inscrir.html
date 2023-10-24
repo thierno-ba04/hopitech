@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="responsive.css">
+    <title>hopitech</title>
+</head>
+<body class="body-inscri">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark  ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img-hopitech/logo - Copie.PNG" alt="" class="img-fluid w-55"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background: white;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">ACCUEIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="l-prodruits.html">LISTE DES PRODUITS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datails.html">D'ETAILS D'UN PRODUITS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inscrir.html">S'INSCRIR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="connecter.html">SE CONNECTE</a>
+          </li>            
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <div class="box ms-5 d-md-flex ">
+        <div>
+          <input type="text" placeholder="search">
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+        <div>
+          <label for="site-search"><i class="fa-solid fa-cart-shopping ms-5" style="color: white;"></i></label>
+        </div>
+        </div>
+
+
+      </div>
+        
+        </div>
+</nav>
+ <!-- -------fin header---------- -->
+  <section id="inscrir">
+    <div class="container mt-5 bg-dark" style="padding-top: 30px;">
+      <h2 class="text-center mb-2">S'INSCRIR</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="contactform">
+            <div class="form-group">
+              <input class="form-control" id="name" type="text" placeholder="NOM*"  data-sb-validations="required">
+              <div class="invalid-feedback" data-sb-feedback="nom:required">A phone number is required.</div>
+            </div>
+            <div class="form-group mt-5">
+              <input class="form-control" id="name" type="text" placeholder="VOTRE PRENOM*" required>
+              <div class="invalid-feedback" data-sb-feedback="prenom:required">A phone number is required.</div>
+            </div>
+            <div class="form-group mt-5">
+              <input class="form-control" id="email" type="mail" placeholder="YOUR EMAIL*" required>
+              <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+              <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>           
+             </div>
+          </form>
+        </div>
+        <div class="col-md-6">      
+          <div class="form-group mt-5 mt-md-0">
+            <input class="form-control" id="phone" type="tel" placeholder="Your Phone" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+
+          </div>
+          <div class="form-group  mt-5">
+            <input class="form-control" id="password" type="password" placeholder="PASSWORD" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="password:required">A phone number is required.</div>
+          </div>
+          <div class="form-group  mt-5">
+            <input class="form-control" id="password" type="password" placeholder="CONFIRM PASSWORD" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="confirm-=_password:required">A phone number is required.</div>
+          </div>
+        </div>
+      </div>
+          <div class="my-btn d-flex justify-content-center mt-5 ">
+          <button class="btn btn-primary w-25 mt-5">SUBMIT</button>
+      </div>
+  </div>
+  </section>
+  <footer id="footer" class="mt-5" style="background: #000; color: white;">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-4">
+          <h3 class=" fs-5 ms-5">Moyens de paiements acceptés</h3>
+          <img src="img-hopitech/240_F_563009614_0Pfnd5c4fWwWgAUfhXoQkfOX4XSi78Ba-removebg-preview.png" alt="" class="img-footer ms-5" width="40%" >
+        </div>
+        <div class="col-md-4">
+          <h3 class=" fs-5 mb-4 ms-5">Nos reseau sociaux</h3>
+          <a href="https://fr-fr.facebook.com/login.php/" target="_blank"><i class="fa-brands fa-facebook ms-5"></i></a>
+          <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter ms-5"></i></a>
+          <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram ms-5"></i></a>
+          <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram ms-5"></i></a>
+          <a href="https://www.linkedin.com/login/fr" target="_blank"><i class="fa-brands fa-linkedin ms-5"></i></a>
+        </div>
+        <div class="col-md-4">
+          <P class="ms-5">copyright@hopitech2023</P>
+        </div>
+      </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

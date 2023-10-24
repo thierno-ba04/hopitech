@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+.img-carousel{
+   margin-left: -100px;
+}
+.img-carou-d{
+   position: relative;
+   left: 240px;
+   height: 200px;
+ }
+ .ms-left-btn{
+  margin-left: 1% !important;
+}
+.sms{
+  margin-top: 45px;
+}
+}
+
+
+
+
+
+/* mode telephone */
+@media screen and (max-width: 560px) {
+    .img-carousel{
+       margin-left: -130px;
+    }
+
+
+    /* connecter */
+    #connect{
+      height: 790px;
+      padding-top: 85px;
+    }
+    .img-carou-d{
+      position: relative;
+      left: 140px;
+    }
+    }

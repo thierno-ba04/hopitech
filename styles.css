@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+  --gradient-color:  linear-gradient(#f63c86, #3f41a6);
+  --gradient-color:  linear-gradient(#fff, #3f41a6);
+  --bs-rouge:  #F44336;
+  --bg-dark-blue: #0e1525;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-jc: #F6E1C5;
+  --bs-cl:  #7B261A
+ 
+}
+
+  header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img-hopitech/hopi4IMG_3313.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+    background-position: center;
+    }
+  .navbar-light .navbar-nav .nav-link{
+    color: var(--bs-light);
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: var(--bs-cyan);
+  border-bottom: 1px solid var(--bs-cyan);
+}
+.box{
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: var(--bs-cyan);
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.box:hover input{
+  width: 150px;
+  transition: 0.5s;
+}
+
+.box input{
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: O.8s;
+  background: transparent;
+}
+
+.box a .fa{
+  color: white;
+}
+.box:hover a .fa{
+  color: var(--bs-white);
+}
+/* -----------fin nav----------- */
+h1{
+  margin-top: 107px;
+}
+.pro2{
+  margin-top: 100px;
+}
+/* .sms{
+  height: 220px;
+} */
+.img-text{
+  position: relative;
+  left: 300px;
+}
+#connect{
+  background-image: url(img-hopitech/Ihopitech2MG_4806.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.body-inscri{
+  background-image: url(img-hopitech/Ihopitech2MG_4806.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
+
+}
+.my-btn{
+  position: relative;
+  bottom: 15px;
+  border-radius: 20px;
+}
+.my-btn .btn:focus{
+ background-color: green;
+ margin-bottom: 30px;
+}
+/* ----------------details des produits----- */
+#d-produits{
+  margin-top: 108px;
+  background:  #f8f9fa;
+}
+
+.img-carou-d{
+  position: relative;
+  left: 520px;
+}
+/* -----------contact---------- */
+#contact{
+  margin-top: 130px;
+}
+.ms-left-btn{
+  margin-left: 15%;
+}
+/* ------------contact------- */
+.sms .textarea{
+  height: 530%;
+}
+
+/* section se connecter */
+
+.box2{
+  position: relative;
+  width: 380px;
+  height: 400px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.box2::before{
+  content: "" ;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent,
+  transparent,#45f3ff, #45f3ff );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.box2::after::after{
+  content: "" ;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent,
+  transparent,#45f3ff,#45f3ff );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+.borderline{
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+.borderline::before{
+  content: "" ;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent,
+  transparent,#ff2770,#ff2770 );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+.borderline::after{
+  content: "" ;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent,
+  transparent,#ff2770,#ff2770);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -4.5s;
+}
+@keyframes animate{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+.box2 form{
+  position: absolute;
+  inset: 4px;
+  background: #222;
+  padding: 50px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.box2 form h2{
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.box2 form .inputbox2{
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+.box2 form .inputbox2 input{
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+.box2 form .inputbox2 span{
+position: absolute;
+left: 0;
+padding: 20px 0px 10px; 
+pointer-events: none;
+color: #8f8f8f; 
+font-size: 1em;
+letter-spacing: 0.05em;
+transition: 0.5s;
+}
+.box2 form .inputbox2 input:valid ~ span,
+.box2 form .inputbox2 input:focus ~ span
+{
+  color: #fff;
+  font-style: 0.75em;
+  transform: translateY(-34px);
+}
+.box2 form .inputbox2 i{
+  position: absolute;
+ left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.box2 form .inputbox2 input:valid ~  i,
+.box2 form .inputbox2 input:focus ~i {
+  height: 44px;
+}
+.box2 form .links{
+  display: flex;
+  justify-content: space-between;
+}
+.box2 form .links a{
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: #8f8f8f;
+  text-decoration: none;
+}
+.box2 form .links a:hover
+.box2 form .links a:nth-child(2)
+{
+  color: #fff;
+}
+.box2 form input[type="submit"]
+{
+border: none;
+outline: none;
+padding: 9px 25px;
+background: #fff;
+cursor: pointer;
+font-size: 0.9em;
+font-weight: 600;
+border-radius: 4px;
+width: 100px;
+margin-top: 10px;
+}
+.box2 form input[type="submit"]:active
+{
+  opacity: 0.8;
+}
